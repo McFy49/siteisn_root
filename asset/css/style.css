@@ -1,0 +1,75 @@
+body {							/*contenu de la page ( le corps)*/
+  font-family: "Maven Pro", sans-serif;  /*Police du texte "Maven Pro" */
+  font-size: 15px;						/*taille de l'écriture des textes de description en px*/
+  background-color: white;				/*couleur du fond caché par l'image de backgroung*/
+}
+
+.card {									/*class qui relie la class card du css a celle du HTML avec le point*/
+  width: 75%;							/*largeur de la carte en % */
+  min-height: 400px;					/*hauteur minimum (taille de la carte a partir du haut de la carte) en pixels*/
+  margin: 100px auto;					/*marge entre le haut de la page et la carte en pixels(auto permet de centrer la carte= même marge de chaque coté)*/
+  border-radius: 12px;					/*rayon de l'arrondis des bords de la carte*/
+  padding: 40px;						/*espace entre la carte et les cotés de la page (c'est ce qui limite la taille de la carte en fonction de celle de la page)*/
+  text-align: center;					/*alignement du titre ici au centre*/
+  background-color: white;				/*couleur de fond de la carte ici blanc*/
+}
+
+
+.product {								/*class .product qui correspond */
+  position: absolute;					/*position absolute permet de fixer la position de chaque carte a la même hauteur pour chaque carte*/
+  opacity: 0;							/*opacité de la carte active ici 0 donc la carte est totalement visible*/
+}
+
+.product.active {						/*class qui correspond aux cartes qui ne sont pas actives*/
+  opacity: 1;							/* pour ne pas les voir on met l'opacité au max*/
+}
+
+.logo {									/*class qui correspond a chaque images*/
+  position: absolute;					/* position fixe sur la carte quand on change de carte*/
+}
+
+.title {									/*class du titre*/
+  color: #000000;						/*couleur du titre ici noir*/
+  font-size: 25px;						/*taille de l'écriture du titre*/
+  position: relative;					/*la position du titre est relative elle change en fonction de la taille de la carte mais reste centré*/
+  margin: 0 0 30px;						/*Marge entre le titre et la bord de la carte dans l'ordre suivant: haut bas cotés*/
+}
+
+.description {							/*Class description correspond aux textes de developpement des enseignement*/
+  margin: 5% 25%;						/* Marge entre la description et les bords de la page dans l'ordre suivant: haut&bas% cotés% */
+}
+
+.bouton {								/*class pour les boutons*/
+  position: relative;					/*position qui change en fonction de la taille de la carte*/
+  font-size: 20px;						/*taile des bontons en pixels*/
+  text-decoration: none;				/*pas de décoration de texte (souligné gras...)*/
+  text-transform: uppercase;			/*texte en majuscule dans les boutons */
+  padding:10px 10px 10px 10px;			/*espace entre le texte et le bord du bouton dans l'ordre suivant: haut droite bas gauche */
+  border-radius: 15%;					/* rayon de l'arrondis des bords des boutons*/
+  margin: 0 0 0 95%;					/*  */
+  color: #3a3a3a;  						/*couleur texte dans les boutons*/
+}
+
+.quiz_card {								/*class de la carte du quizz*/
+  width: 75%;							/*largeur de la carte en % de la taille de la page*/
+  margin: 100px auto;					/*marge entre les bords de la page et la carte*/
+  border-radius: 12px;					/*rayon de l'arrondis des coins de la carte*/
+  padding: 40px;						/*espace entre le bord de la carte et la bord de la page */
+  text-align: center;					/*alignement du text au centre*/
+  background-color: #f7ffce;			/*couleur de fonc de la carte*/
+}
+
+#next {									/*lien les ID(class pour un seul element) avec du HTML */
+    background: #f7f4f4;
+
+}
+
+#quiz {
+  top: 333px;
+  background: #f7ffce;
+}
+
+#retour {
+  border: 1px black solid;
+  right: 33px;
+}

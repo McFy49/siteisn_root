@@ -1,0 +1,49 @@
+<!DOCTYPE html>								<!-- défini le code comme étant en HTML-->
+<html lang="fr">							<!-- définila langue francaise pour le navigateur-->
+
+<head>										<!-- informations transmisent au navigateur-->
+  <meta charset="utf-8">					<!-- on définit en métadonnée(pour le navigateur) le style de charactère utilisé-->
+  <title>présentation des enseignements</title>  <!--Titre de la page visible dans l'onglet sur navigateur-->
+  <link rel="icon" href="asset/image/favicon/main.png" />		<!-- lien avec des fichiers pour rammener une image sur la page-->
+  <link rel='stylesheet prefetch' href='https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900|Material+Icons'>		<!-- Fichiers CSS tout fais avec diff polices d'écriture (Style de la police d'écriture sur google-->
+  <link rel="stylesheet" href="asset/css/style.css">		
+</head>
+
+<body background="asset/image/bg.png">		<!-- Corps du site partie visible/ image de fond-->
+  
+  <div class="card">						<!-- creation d'un espace pour afficher les cartes -->
+
+	<div class="first_page">
+		<div class="product active" card="1">		<!--On définit cette carte comme étant la première et on l'associe a l'état actif -->
+		<div class="logo"><img src="asset/image/physique_chimie.png" width="200px" height="200px" /></div>  	<!-- Nouvelle class logo( image qui illustre chaque matière/ lien pour allez chercher l'image/ largeur/ hauteur-->
+		<h1 class="title">Physique-Chimie</h1>		<!-- Titre de la carte en grande taille h1-->
+		<p class="description">Si tu exprime le goût des sciences et que tu es curieux et intrigué par ce monde qui t’entoure alors l’enseignement de spécialité de physique-chimie est fait pour toi. Choisir la physique-chimie c’est aussi choisir d’acquérir des modes de raisonnement et de travail inspiré par les sciences expérimentales. S’en suit protocoles, expériences, calculs et travaux pratiques et théoriques. De plus cet enseignement ouvre la voie des études supérieures en lien direct avec la physique-chimie comme la médecine, la technologie, l’ingénierie, l’informatique et enfin les mathématiques. Science fondamentale et appliquée qui apporte des savoirs et un savoir-faire indispensable dans l’apprentissage des sciences de l’ingénieurs ainsi que les sciences de la vie et de la Terre. 
+
+</p>
+	</div>
+	
+    <div class="product" card="2">			<!--On associe la carte 2 a la class product( carte non-active)-->
+      <div class="logo"><img src="asset/image/biologie.png"/></div>
+      <h1 class="title">Biologie-écologie</h1>
+      <p class="description">Avec comme objectif l’acquisition d’une culture scientifique solide et à la fois une formation de l’esprit critique l’enseignement de biologie-écologie donne un accès direct aux études supérieures notamment dans les domaines de l’agronomie, de l’écologie, de la santé humaine et animale et du sport. Différentes thématiques répondant au questionnements scientifiques et sociétaux composent le programme. Cette enseignement permet la découvertes d’enjeux environnementaux à travers l’étude des ressources, de la biodiversité, des écosystèmes et du climat. Des enjeux de santé publique sont aussi étudiés avec l’alimentation, l’environnement, l’activité physique, le comportement à risque et le patrimoine génétique. Enfin c’est à travers des situations concrètes sur le terrain, en laboratoire ou avec des professionnels que sera rendu habituel l’usage des technologies de l’informatique et de la communication.
+.
+</p>
+    </div>
+	
+    <div class="product" card="3">
+      <div class="logo"><img src="asset/image/litterature.png" width="278" height="230"/></div>
+      <h1 class="title">Langues, littérature et philosophie</h1>
+      <p class="description">Si tu veux consolider tes connaissances en langues vivantes étrangères et acquérir une culture littéraire et générale approfondie et diverse alors l’enseignement “Langues, littérature et philosophie” est fait pour TOI. Allemand, anglais, espagnol ou encore italien pourront t’être enseigné au lycée NDBN. De plus une option facultative de latin est enseigné au plus curieux. C’est en s’appuyant sur de nombreux supports variés que tu va découvrir du nouveau vocabulaire et t’épanouir dans les activités langagières de ton choix. L’apprentissage des langues et de la philosophie sera fait à partir de thématiques définies comme par exemple “le voyage” ou “les imaginaires”. Production oral et écrite, interaction et écoute te permettront d’acquérir un bagage littéraire et une bonne rhétorique. </p>
+    </div>
+
+</div>
+
+<div><a class="bouton" id="next" href="#">Next</a></div>			<!-- bouton next-->
+<div><a class="bouton" id="quiz" href="#">quiz</a></div>			<!-- bouton quiz-->
+  
+<script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>		<!-- lien vers la librairie jquery (Javascript)-->
+<script src="asset/js/bouton.js"></script>							<!-- lien vers le code javascript pour les boutons et les cartes interactives -->
+
+</body>
+
+</html>
